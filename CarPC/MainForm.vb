@@ -50,7 +50,7 @@ Public Class CarPCfrm
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         carpc_form_variable = Me
 
-
+        'Form load.
 
         'Possible startup delay from win 10 caused by:
         'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize

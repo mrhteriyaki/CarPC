@@ -1,0 +1,1 @@
+PROBLEM IS Dashcam recordings folder does not have 'USER' full access permission (NTFS)

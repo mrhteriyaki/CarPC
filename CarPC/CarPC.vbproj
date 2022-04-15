@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3264ED9C-431D-4117-9CD1-C79235EB9535}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CarPC.My.MyApplication</StartupObject>
+    <RootNamespace>CarPC</RootNamespace>
+    <AssemblyName>CarPC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CarPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CarPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>CarPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>CarPC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>CarPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>CarPC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AGauge">
+      <HintPath>..\..\Libraries\AGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Delimon.Win32.IO">
+      <HintPath>..\..\Delimon.Win32.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>..\..\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Emgu\emgucv-windesktop 3.1.0.2282\bin\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="Id3">
+      <HintPath>..\..\Libraries\ID3-0.3-bin\Id3.dll</HintPath>
+    </Reference>
+    <Reference Include="Id3.Files">
+      <HintPath>..\..\Libraries\ID3-0.3-bin\Id3.Files.dll</HintPath>
+    </Reference>
+    <Reference Include="Id3.WinForms">
+      <HintPath>..\..\Libraries\ID3-0.3-bin\Id3.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectSound.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.2.0.taglib-sharp">
+      <HintPath>packages\taglib.2.1.0.0\lib\policy.2.0.taglib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="taglib-sharp">
+      <HintPath>packages\taglib.2.1.0.0\lib\taglib-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code Modules\Airconditioning.vb" />
+    <Compile Include="Code Modules\AuxController.vb" />
+    <Compile Include="Code Modules\BadSmellZone.vb" />
+    <Compile Include="Code Modules\LocationFunctions.vb" />
+    <Compile Include="Code Modules\Logging.vb" />
+    <Compile Include="Code Modules\LogitechWebcamSettings.vb" />
+    <Compile Include="Code Modules\MathFunctions.vb" />
+    <Compile Include="Code Modules\Search.vb" />
+    <Compile Include="Code Modules\ThreadingControl.vb" />
+    <Compile Include="Code Modules\VolumeControl.vb" />
+    <Compile Include="Code Modules\WiFi Scanner.vb" />
+    <Compile Include="Main Panels\Cameras.Designer.vb">
+      <DependentUpon>Cameras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Panels\Cameras.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Code Modules\CarPCShared.vb" />
+    <Compile Include="Main Panels\EngineInfo.Designer.vb">
+      <DependentUpon>EngineInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Panels\EngineInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code Modules\GPSProcessor.vb" />
+    <Compile Include="Main Panels\Keyboard.Designer.vb">
+      <DependentUpon>Keyboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Panels\Keyboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Code Modules\CANBUS.vb" />
+    <Compile Include="Main Panels\Mode Window.Designer.vb">
+      <DependentUpon>Mode Window.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Panels\Mode Window.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code Modules\modWMI.vb" />
+    <Compile Include="Music Panels\MediaControls.Designer.vb">
+      <DependentUpon>MediaControls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\MediaControls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music Panels\MediaInfo.Designer.vb">
+      <DependentUpon>MediaInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\MediaInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music Panels\Music.Designer.vb">
+      <DependentUpon>Music.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\Music.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\MusicLibrary.Designer.vb">
+      <DependentUpon>MusicLibrary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\MusicLibrary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\FileBrowser.Designer.vb">
+      <DependentUpon>FileBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\FileBrowser.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\PlaylistLibrary.Designer.vb">
+      <DependentUpon>PlaylistLibrary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\PlaylistLibrary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music Panels\Playlist.Designer.vb">
+      <DependentUpon>Playlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\Playlist.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Code Modules\MusicShared.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Main Panels\Navigation.Designer.vb">
+      <DependentUpon>Navigation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Panels\Navigation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option Panels\CANDecoder.Designer.vb">
+      <DependentUpon>CANDecoder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Option Panels\CANDecoder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option Panels\Car Status.Designer.vb">
+      <DependentUpon>Car Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Option Panels\Car Status.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option Panels\ErrorLog.Designer.vb">
+      <DependentUpon>ErrorLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Option Panels\ErrorLog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option Panels\JourneyLogs.Designer.vb">
+      <DependentUpon>JourneyLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Option Panels\JourneyLogs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option Panels\Option Panel.Designer.vb">
+      <DependentUpon>Option Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Option Panels\Option Panel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option Panels\SWControls.Designer.vb">
+      <DependentUpon>SWControls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Option Panels\SWControls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\SearchControl.Designer.vb">
+      <DependentUpon>SearchControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Music Panels\MusicLibraryPanels\SearchControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Code Modules\SerialManager.vb" />
+    <Compile Include="Code Modules\SteeringWheelControls.vb" />
+    <Compile Include="Code Modules\Tracking.vb" />
+    <Compile Include="Code Modules\VoltMeter.vb" />
+    <Compile Include="Option Panels\CameraSetup.Designer.vb">
+      <DependentUpon>CameraSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Option Panels\CameraSetup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebPortals\Facebook.Designer.vb">
+      <DependentUpon>Facebook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebPortals\Facebook.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebPortals\SoundCloud.Designer.vb">
+      <DependentUpon>SoundCloud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebPortals\SoundCloud.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebPortals\Spotify.Designer.vb">
+      <DependentUpon>Spotify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebPortals\Spotify.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebPortals\WebPortalPrompt.Designer.vb">
+      <DependentUpon>WebPortalPrompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebPortals\WebPortalPrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebPortals\YouTube.Designer.vb">
+      <DependentUpon>YouTube.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebPortals\YouTube.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Main Panels\Cameras.resx">
+      <DependentUpon>Cameras.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Panels\EngineInfo.resx">
+      <DependentUpon>EngineInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Panels\Keyboard.resx">
+      <DependentUpon>Keyboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Panels\Mode Window.resx">
+      <DependentUpon>Mode Window.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\MediaControls.resx">
+      <DependentUpon>MediaControls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\MediaInfo.resx">
+      <DependentUpon>MediaInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\Music.resx">
+      <DependentUpon>Music.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\MusicLibraryPanels\MusicLibrary.resx">
+      <DependentUpon>MusicLibrary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\MusicLibraryPanels\FileBrowser.resx">
+      <DependentUpon>FileBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\MusicLibraryPanels\PlaylistLibrary.resx">
+      <DependentUpon>PlaylistLibrary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\Playlist.resx">
+      <DependentUpon>Playlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Panels\Navigation.resx">
+      <DependentUpon>Navigation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option Panels\CameraSetup.resx">
+      <DependentUpon>CameraSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option Panels\CANDecoder.resx">
+      <DependentUpon>CANDecoder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option Panels\Car Status.resx">
+      <DependentUpon>Car Status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option Panels\ErrorLog.resx">
+      <DependentUpon>ErrorLog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option Panels\JourneyLogs.resx">
+      <DependentUpon>JourneyLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option Panels\Option Panel.resx">
+      <DependentUpon>Option Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option Panels\SWControls.resx">
+      <DependentUpon>SWControls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Panels\MusicLibraryPanels\SearchControl.resx">
+      <DependentUpon>SearchControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPortals\Facebook.resx">
+      <DependentUpon>Facebook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPortals\SoundCloud.resx">
+      <DependentUpon>SoundCloud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPortals\Spotify.resx">
+      <DependentUpon>Spotify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPortals\WebPortalPrompt.resx">
+      <DependentUpon>WebPortalPrompt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPortals\YouTube.resx">
+      <DependentUpon>YouTube.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="USBMeasure">
+      <Guid>{4D012199-B3DC-4B22-ABA5-1DD1FEC6A293}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Developer.txt" />
+    <None Include="Resources\DefogWindscreen.bmp" />
+    <None Include="Resources\Window Vents-White.jpg" />
+    <None Include="Resources\Selected-White.jpg" />
+    <None Include="Resources\Rear Demister On-White.jpg" />
+    <None Include="Resources\Rear Demister Off-White.jpg" />
+    <None Include="Resources\Open Cabin-White.jpg" />
+    <None Include="Resources\On Button-White.jpg" />
+    <None Include="Resources\Feet Vents-White.jpg" />
+    <None Include="Resources\Feet and Window Vents-White.jpg" />
+    <None Include="Resources\Face Vents-White.jpg" />
+    <None Include="Resources\Face and Feet-White.jpg" />
+    <None Include="Resources\DefogWindscreen-White.jpg" />
+    <None Include="Resources\Close Cabin-White.jpg" />
+    <None Include="Resources\VolumeUp-White1.bmp" />
+    <None Include="Resources\volumedown-white1.bmp" />
+    <None Include="Resources\Stop-White1.bmp" />
+    <None Include="Resources\Shuffle On-White1.bmp" />
+    <None Include="Resources\Shuffle Off-White1.bmp" />
+    <None Include="Resources\Previous-White1.bmp" />
+    <None Include="Resources\Play-White1.bmp" />
+    <None Include="Resources\Pause-White1.bmp" />
+    <None Include="Resources\Next-White1.bmp" />
+    <None Include="Resources\VolumeUp-White.bmp" />
+    <None Include="Resources\VolumeUp1.bmp" />
+    <None Include="Resources\volumedown-white.bmp" />
+    <None Include="Resources\volumedown1.bmp" />
+    <None Include="Resources\Stop-White.bmp" />
+    <None Include="Resources\Stop1.bmp" />
+    <None Include="Resources\Shuffle On-White.bmp" />
+    <None Include="Resources\Shuffle On1.bmp" />
+    <None Include="Resources\Shuffle Off-White.bmp" />
+    <None Include="Resources\Shuffle Off1.bmp" />
+    <None Include="Resources\Previous-White.bmp" />
+    <None Include="Resources\Previous1.bmp" />
+    <None Include="Resources\Play-White.bmp" />
+    <None Include="Resources\Play1.bmp" />
+    <None Include="Resources\Pause-White.bmp" />
+    <None Include="Resources\Pause1.bmp" />
+    <None Include="Resources\Next-White.bmp" />
+    <None Include="Resources\Next1.bmp" />
+    <None Include="Resources\Unlock-White.jpg" />
+    <None Include="Resources\Unlock.bmp" />
+    <None Include="Resources\TestLightsOff.jpg" />
+    <None Include="Resources\Options-White.jpg" />
+    <None Include="Resources\Options.bmp" />
+    <None Include="Resources\Music-White.jpg" />
+    <None Include="Resources\Music.bmp" />
+    <None Include="Resources\Lock-White.jpg" />
+    <None Include="Resources\Lock.bmp" />
+    <None Include="Resources\LightsOn-White.jpg" />
+    <None Include="Resources\LightsOn1.bmp" />
+    <None Include="Resources\LightsOff-White.jpg" />
+    <None Include="Resources\LightsOff1.bmp" />
+    <None Include="Resources\Hazards-White.jpg" />
+    <None Include="Resources\Hazards.bmp" />
+    <None Include="Resources\GPS-White.jpg" />
+    <None Include="Resources\GPS.bmp" />
+    <None Include="Resources\Favourite-White.jpg" />
+    <None Include="Resources\Favourite.bmp" />
+    <None Include="Resources\Exit-White.jpg" />
+    <None Include="Resources\Exit.bmp" />
+    <None Include="Resources\Engine-White.jpg" />
+    <None Include="Resources\Engine.bmp" />
+    <None Include="Resources\DSC-White.jpg" />
+    <None Include="Resources\DSC.bmp" />
+    <None Include="Resources\Camera-White.jpg" />
+    <None Include="Resources\Camera.bmp" />
+    <None Include="Resources\Selected.jpg" />
+    <None Include="Resources\On Button.jpg" />
+    <None Include="Resources\VolumeUp.bmp" />
+    <None Include="Resources\volumedown.bmp" />
+    <None Include="Resources\Stop.bmp" />
+    <None Include="Resources\Shuffle On.bmp" />
+    <None Include="Resources\Shuffle Off.bmp" />
+    <None Include="Resources\Previous.bmp" />
+    <None Include="Resources\Play.bmp" />
+    <None Include="Resources\Pause.bmp" />
+    <None Include="Resources\Next.bmp" />
+    <None Include="Resources\LightsOn.bmp" />
+    <None Include="Resources\LightsOff.bmp" />
+    <None Include="Resources\Window Vents.bmp" />
+    <None Include="Resources\Rear Demister On.bmp" />
+    <None Include="Resources\Rear Demister Off.bmp" />
+    <None Include="Resources\Open Cabin.bmp" />
+    <None Include="Resources\Feet Vents.bmp" />
+    <None Include="Resources\Feet and Window Vents.bmp" />
+    <None Include="Resources\Face Vents.bmp" />
+    <None Include="Resources\Face and Feet.bmp" />
+    <None Include="Resources\Close Cabin.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, DimKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, DimKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, DimKeyToken=b77a5c561934e089" />
+  <data name="LightsOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightsOff.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Selected.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeUp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle On-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle On-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rear Demister Off-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rear Demister Off-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Engine-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Engine-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DSC-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DSC-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rear Demister Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rear Demister Off.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightsOn-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightsOn-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rear Demister On-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rear Demister On-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeUp-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeUp-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GPS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GPS.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close Cabin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close Cabin.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Face and Feet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Face and Feet.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle On1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle On1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Face Vents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Face Vents.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Feet Vents-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Feet Vents-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="On Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\On Button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Face and Feet-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Face and Feet-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GPS-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GPS-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle Off1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle Off1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeUp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeUp1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle Off.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Face Vents-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Face Vents-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Options.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rear Demister On" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rear Demister On.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unlock-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unlock-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Feet and Window Vents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Feet and Window Vents.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle On-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle On-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightsOn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightsOn1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unlock.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volumedown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volumedown.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Camera-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Camera-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open Cabin-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open Cabin-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle Off-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle Off-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Camera.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volumedown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volumedown1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefogWindscreen-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefogWindscreen-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Window Vents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Window Vents.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestLightsOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestLightsOff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DSC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DSC.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close Cabin-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close Cabin-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hazards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hazards.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Options-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Options-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeUp-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeUp-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hazards-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hazards-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightsOff-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightsOff-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open Cabin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open Cabin.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightsOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightsOn.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause-White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause-White1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Window Vents-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Window Vents-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Feet and Window Vents-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Feet and Window Vents-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Feet Vents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Feet Vents.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volumedown-white1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volumedown-white1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volumedown-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volumedown-white.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lock-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favourite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Favourite.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selected-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Selected-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Engine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Engine.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="On Button-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\On Button-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle Off-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle Off-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favourite-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Favourite-White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle On" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shuffle On.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightsOff1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightsOff1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous-White.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefogWindscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefogWindscreen.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, DimKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

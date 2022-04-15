@@ -1,0 +1,11 @@
+Device must show as 'Bulk-In, Interface' in Device manager.
+Windows update may install driver incorrectly, disable driver installation from win update in System properties.
+
+Run Zadig and install drivers.
+
+
+Install HDSDR, copy ExtIO_RTL2832.dll to installation directory.
+
+Run HDSDR, set FM-BW to maximum (slider) - 96000
+
+Set to FM, Click start.

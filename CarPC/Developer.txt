@@ -1,0 +1,34 @@
+- Sort by ID3 tags.
+	- Library: Album, Song Title, Artist.
+	Ideas for Sorting by Artist and Album.
+		- Use Search Background worker to record Song Title, Album and Artist for each song.
+			Add additional arrays for Title, Albume  and Artist
+			Use same Index for Filename
+		  Search Index BW should get all filenames first, enable the basic search (Search Panel).
+		  Then using Filenames array, run through all files and get ID3 Tags.
+
+
+		- New Panel enable once search thread is ready.
+			New Panel to show Artists
+				 After select Artist, show Albums.
+						After Album Select, Show Songs.
+
+
+
+
+
+-add gps to top
+
+
+
+
+
+
+
+
+
+23-7-2016:
+
+- Add Camera selection / configuration panel, to replace seperate configuration file and program.
+
+- Fix camera view showing when car is put into drive

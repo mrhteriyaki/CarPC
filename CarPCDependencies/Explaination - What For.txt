@@ -1,0 +1,9 @@
+Media player codec pack - additional codecs for wmp (keygen music)
+USBMeasureBeta - installs driver for USB Volt meter.
+VC++ Redist x86 2012 - Required components for Cameras (resources are used by EmguCV)
+x264vfw - h264 codec for compression of dashcam recordings
+lws280 - webcam software, to disable auto-focus for dashcam recordings.
+
+Updated
+klite codec pack (requires install without x264vfw and media player codec pack)
+	- Required for FLV playback

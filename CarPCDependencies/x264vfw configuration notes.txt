@@ -1,0 +1,5 @@
+Using x264vfw configuration tool (not x64 bit version)
+
+Debug (Group Box) -> Log level - set to none to remove 'x264vfw log window'
+
+

@@ -1,0 +1,45 @@
+else if(strcmp(serialinputbuffer,"OBDCOOLANT") == 0)
+        {
+          //obd = additional bytes, current data/freeframe,PID,3-7 unused
+          //2 additional bytes = current data and pid
+         unsigned char msgtemp[8] = {2,1,5,0,0,0,0,0};
+         CAN.sendMsgBuf(0x7DF, 0, 8, msgtemp);
+        
+         Serial.println("CAN MESSAGE SENT FOR OBD COOLANT");
+        }
+        else if(strcmp(serialinputbuffer,"OBDINTAKETEMP") == 0)
+        {
+         unsigned char msgtemp[8] = {2,1,15,0,0,0,0,0};
+         CAN.sendMsgBuf(0x7DF, 0, 8, msgtemp);
+         Serial.println("CAN MESSAGE SENT FOR INTAKE TEMP");
+        }
+        else if(strcmp(serialinputbuffer,"OBDINTAKEPSI") == 0)
+        {
+         unsigned char msgtemp[8] = {2,1,11,0,0,0,0,0};
+         CAN.sendMsgBuf(0x7DF, 0, 8, msgtemp);
+         Serial.println("CAN MESSAGE SENT FOR OBD COOLANT");
+        }
+        else if(strcmp(serialinputbuffer,"OBDAIRTEMP") == 0)
+        {
+         unsigned char msgtemp[8] = {2,1,70,0,0,0,0,0};
+         CAN.sendMsgBuf(0x7DF, 0, 8, msgtemp);
+         Serial.println("CAN MESSAGE SENT FOR OBD AMBIENT AIR TEMP");
+        }
+        else if(strcmp(serialinputbuffer,"OBDECUVOLTAGE") == 0)
+        {  
+         unsigned char msgtemp[8] = {2,1,66,0,0,0,0,0};
+         CAN.sendMsgBuf(0x7DF, 0, 8, msgtemp);
+         Serial.println("CAN MESSAGE SENT FOR OBD ECU VOLTAGE");
+        }
+
+
+ if(strcmp(serialinputbuffer, "SENDMAINCAN")==0)
+        {
+         sendprimarycan = 1;
+         Serial.println("SENDPRIMARYCAN:ON");
+         }
+        else if(strcmp(serialinputbuffer, "STOPMAINCAN") == 0)
+        {
+         sendprimarycan = 0;
+         Serial.println("SENDPRIMARYCAN:OFF");
+        }

@@ -9,8 +9,12 @@ CarPCDependencies -> Required dependencies for system.
 CarPCMapping -> Convert GPS log data into Google maps view.  
 CarPCMusicSync -> Sync new music / media files to CarPC.  
 CarPCServer -> Windows server side service to recieve GPS reports from Car for remote tracking.  
+
 Documentation -> CAN Bus information  
-(The best source of FG CANBUS Information can be found on jakka351's page at https://github.com/jakka351/FG-Falcon)
+
+(Recommend using Jakka351's page at https://github.com/jakka351/FG-Falcon)
+Includes my documentation and others.
+
 
 ![CarPC](Images/CarPC.jpg)
 ![CarPC](Images/22-6-2016.jpg)
